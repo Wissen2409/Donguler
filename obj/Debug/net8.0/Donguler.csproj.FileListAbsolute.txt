@@ -12,3 +12,4 @@
 /Users/emrahelis/Desktop/Donguler/obj/Debug/net8.0/Donguler.pdb
 /Users/emrahelis/Desktop/Donguler/obj/Debug/net8.0/Donguler.genruntimeconfig.cache
 /Users/emrahelis/Desktop/Donguler/obj/Debug/net8.0/ref/Donguler.dll
+/Users/emrahelis/Desktop/Donguler/obj/Debug/net8.0/Donguler.sourcelink.json
