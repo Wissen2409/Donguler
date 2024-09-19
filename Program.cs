@@ -149,7 +149,7 @@ Console.WriteLine("{0} adet çift sayı",ciftSayi);
 // for döngüsü kullanılarak, ekrana 10 karakterli random bir kelime yazdırınız
 // Örnek : asjasdkdkd
 
-Random rnd = new Random();
+/*Random rnd = new Random();
 string randomString="";
 for(int i=0;i<=1000;i++){
 
@@ -161,5 +161,65 @@ for(int i=0;i<=1000;i++){
    Console.Write(random);
 
 }
+*/
+
+// Örnek : Ekrandan x adet sayı alalım, girilen bu sayıların en küçüğünü ve en büyüğünü ekrana yazdıralım
+// Örnek
+
+
+
+
+/*int enBuyuk = 0;
+int enKucuk = 999;
+Console.WriteLine("Merhaba en küçük ve en büyük sayı bulma oyunu için sayı girişi yapmanızı istiyorum");
+for(int i = 0; i < 10;i++){
+
+
+    Console.WriteLine("{0}. sayıyı giriniz",i+1);
+    int girilenSayi =int.Parse(Console.ReadLine());
+    if(girilenSayi<enKucuk){
+        enKucuk=girilenSayi;
+    }
+    if(girilenSayi>enBuyuk){
+        enBuyuk=girilenSayi;
+    }
+}
+
+*/
+/*
+enbuyuk = 0;
+enkucuk = 0;
+
+ekrandan değer aldın.
+4 girildi
+
+4 değeri 999 değerinden küçük mü 
+7 değeri 4 değerinden küçük mü ?
+
+
+1 değeri 4 değerinden küçük mü ?
+
+1 değeri 0 değerinden küçük mü ?
+
+
+
+Console.WriteLine("Girilen en büyük sayı : {0}",enBuyuk);
+Console.WriteLine("Girilen en küçük sayı : {0}",enKucuk);
+
+*/
+/*
+iç içe for döngüsü kullanarak aşağıdaki dik üçgeni çizdiriniz
+x
+xx
+xxx
+xxxx
+xxxxx
+xxxxxx
+xxxxxxx
+xxxxxxxx
+
+*/
+
+
 
 
