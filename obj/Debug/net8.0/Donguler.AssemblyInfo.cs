@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Donguler")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b9a7a926cf5a965f17cc28eaa8da00af304ae57")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b4857afb55f3485cbc5441e90f9f1424fdadd84")]
 [assembly: System.Reflection.AssemblyProductAttribute("Donguler")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Donguler")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
