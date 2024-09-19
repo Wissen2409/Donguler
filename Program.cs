@@ -166,9 +166,6 @@ for(int i=0;i<=1000;i++){
 // Örnek : Ekrandan x adet sayı alalım, girilen bu sayıların en küçüğünü ve en büyüğünü ekrana yazdıralım
 // Örnek
 
-
-
-
 /*int enBuyuk = 0;
 int enKucuk = 999;
 Console.WriteLine("Merhaba en küçük ve en büyük sayı bulma oyunu için sayı girişi yapmanızı istiyorum");
@@ -219,7 +216,7 @@ xxxxxxx
 xxxxxxxx
 
 */
-
+/*
 for(int i=0;i<10;i++){
 
     for(int j=0;j<i;j++){
@@ -227,8 +224,101 @@ for(int i=0;i<10;i++){
         Console.Write("x");
     }
     Console.WriteLine("");
-
 }
 
+/*
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+***********
+*/
 
 
+// Random 1 ile 100 arasında bir sayı tutalım
+// For döngüsü kulnarak, ekrandan sayı girişi alalım
+// kullanıcının girdiği değer, random tutulan değerden küçük ise, yukarı, büyük ise aşağı
+// yazdırarak kullanıcıyı yönlendirelim
+// kullanıcıya 10 hak verelim, 10 hakta doğru sayıyı tahmin edemezse, ekrana kaybettiniz
+// yazalım, eğer doğru bulursa, tebrikler kazandınız diyelim
+
+
+// döngüyü sonlandırma yöntemi
+/*for(int i = 0; i < 10;i++){
+
+    Console.WriteLine(i);
+    if(i==5){
+        i=10;
+    }
+}
+*/
+/*Console.WriteLine("1-100 arasında bir değer tuttum, bu değeri tahmin et");
+Random rnd = new Random();  
+int randomSayi =rnd.Next(1,100);
+bool kazandimi = false;
+for (int i = 0;i<10;i++){
+
+    Console.WriteLine("{0}. tahminini gir",i+1);
+    int girilenSayi=int.Parse(Console.ReadLine());
+    if(girilenSayi>randomSayi){
+        Console.WriteLine("Aşağı");
+    }
+    if(girilenSayi<randomSayi){
+        Console.WriteLine("Yukarı");
+    }
+
+    if(girilenSayi==randomSayi){
+        kazandimi=true;
+        Console.WriteLine("Tebrikler Kazandınız");
+        // döngüyü sonlandırıyorum
+        i=10; // döngü koşulunu bozuyorum artık döngü dönmeyecek
+    }
+}
+if(kazandimi!=true){
+    // kazanılmadıysa, kaybettir yazdır
+  Console.WriteLine("Kaybettiniz");
+}
+*/
+
+// Örnek : 
+// Öğrenciden 10 adet not alıp, bu notların ortalamasını bulan program yazınız.
+/*int toplamSayisi = 10;
+int toplamNot = 0;
+for (int i = 0;i<toplamSayisi;i++){
+    Console.WriteLine("{0}. notu giriniz",i+1);
+    int not = int.Parse(Console.ReadLine());
+    toplamNot+=not;
+
+}
+Console.WriteLine("Not Ortalamanız : {0}",toplamNot/toplamSayisi);
+*/
+
+// Bölüm sonu canavarı örnek 
+// Ekrandan almış olduğunuz bir yazıyı, döngü kullanarak ekrana ters yazdırınız
+
+// Kahve
+// evhak
+
+Console.WriteLine("Bir metin giriniz");
+string metin = Console.ReadLine();
+
+// kahve
+// 5
+// 4
+// 3
+
+
+// bu örneği inceleyin, yarın bu konu hakkında konuşacağız.
+// yarın başka örneklerden devam!!
+string ters ="";
+for (int i = metin.Length;i>0;i--){
+
+   ters+=metin.Substring(i-1,1);
+}
+Console.WriteLine(ters);
