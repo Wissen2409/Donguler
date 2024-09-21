@@ -305,7 +305,8 @@ Console.WriteLine("Not Ortalamanız : {0}",toplamNot/toplamSayisi);
 // Kahve
 // evhak
 
-Console.WriteLine("Bir metin giriniz");
+
+/*Console.WriteLine("Bir metin giriniz");
 string metin = Console.ReadLine();
 
 // kahve
@@ -316,9 +317,42 @@ string metin = Console.ReadLine();
 
 // bu örneği inceleyin, yarın bu konu hakkında konuşacağız.
 // yarın başka örneklerden devam!!
-string ters ="";
+
+/*string ters ="";
 for (int i = metin.Length;i>0;i--){
 
    ters+=metin.Substring(i-1,1);
 }
 Console.WriteLine(ters);
+*/
+
+
+
+
+// Ekrana girilen küçük harf string metinin, baş harf ve son harf lerini büyük harf yapan
+// "uygulama yazınız
+
+
+Console.WriteLine("Bir değer giriniz");
+string deger = Console.ReadLine();
+string ilkKarakter ="";
+string sonKarakter="";
+for (int i = 0;i<deger.Length;i++){
+
+    string tekKarakter= deger.Substring(i,1);
+    if(i==0){
+        // ilk karakteri yakalarız
+        ilkKarakter=tekKarakter.ToUpper();
+    }
+    if(i==deger.Length-1){
+        sonKarakter=tekKarakter.ToUpper();
+    }
+}
+// baş harfi silelim
+string newString = deger.Remove(0,1);
+string newStringNew=newString.Remove(newString.Length-1,1);
+
+Console.WriteLine(ilkKarakter+newStringNew+sonKarakter);
+
+// bir metnin içerisindeki rakamları temizleyen kod örneği yazınız
+// bu5g9ün i2tan6b2ul çok y4ğmu55r8l2u
