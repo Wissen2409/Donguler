@@ -529,10 +529,26 @@ X****X
 
 */
 
+using System.Globalization;
+
 Console.WriteLine("Bir değer giriniz");
 int deger =int.Parse(Console.ReadLine());
 
 for (int i = 0;i<deger;i++){
 
-    // satırları 
+    // satırları oluşturur
+
+    // 
+    for(int j=0;j<deger-i;j++){
+
+        // Boşlukları basalım
+        Console.Write(" ");
+    }
+
+    for(int k=0;k<2*i;k++){
+        Console.Write("*");
+    }
+    Console.WriteLine();
+
 }
+// bu örneği iyice bir inceleyip, bu örnek ile ilgili bazı değişiklikler yaparak derse geliniz.
