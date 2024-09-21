@@ -333,7 +333,7 @@ Console.WriteLine(ters);
 // "uygulama yazınız
 
 
-Console.WriteLine("Bir değer giriniz");
+/*Console.WriteLine("Bir değer giriniz");
 string deger = Console.ReadLine();
 string ilkKarakter ="";
 string sonKarakter="";
@@ -352,7 +352,187 @@ for (int i = 0;i<deger.Length;i++){
 string newString = deger.Remove(0,1);
 string newStringNew=newString.Remove(newString.Length-1,1);
 
-Console.WriteLine(ilkKarakter+newStringNew+sonKarakter);
 
+
+
+Console.WriteLine(ilkKarakter+newStringNew+sonKarakter);
+*/
 // bir metnin içerisindeki rakamları temizleyen kod örneği yazınız
 // bu5g9ün i2tan6b2ul çok y4ğmu55r8l2u
+// küçük harfler hangi aralık
+// 64-91 arası
+// 96-123
+
+//32 boşluk
+
+/*Console.WriteLine("Bir değer giriniz");
+string deger = Console.ReadLine();
+
+string newDeger="";
+for (int i = 0;i<deger.Length;i++){
+    // her karakterde tek tek gezip, o anki karakterin, sayısal karşılığının yukarıdaki araklıkta
+    // olup olmadığına bakalım(Rakam olup olmadığı)
+    char tekKarakter = char.Parse(deger.Substring(i,1));
+    int tekKarakterRakam = Convert.ToInt32(tekKarakter);
+
+    if((tekKarakterRakam>64 && tekKarakterRakam<91) || (tekKarakterRakam>96 && tekKarakter<123)){
+
+        // yukarıdaki rakamsal değerlerin alfabemizde bir karakter karşılığı vardır.
+
+         newDeger+=tekKarakter.ToString();
+    }  
+}
+Console.WriteLine(newDeger);
+*/
+
+// Ara konu : char sınıfına ait metotlar ile bir karakterin harf rakam yada özel karakter olduğunu anlayabilirsiniz
+//char karakter = '3';
+//bool isKarakter = char.IsWhiteSpace(karakter);
+//1Console.WriteLine(isKarakter);
+
+//char.IsLetter
+// bir karakterin harf olup olmadığını söyler
+
+//char.IsDigit
+// bir karakterin rakam olup olmadığını söyler
+
+//char.IsWhiteSpace
+// boşluk karakteri olup olmadığını söyler.
+
+
+
+// ekrandan aldığınız bir string ifadenin
+// büyük harflerini
+// küçük harflerini
+// rakamlarını
+
+// ayrı ayrı sayınız
+
+/*int buyukHarfSayisi =0;
+int kucukHarfSayisi=0;
+int rakamSayisi=0;
+
+Console.WriteLine("Bir değer giriniz");
+string deger = Console.ReadLine();
+for(int i=0;i<deger.Length;i++){
+
+    char tekKarakter = char.Parse(deger.Substring(i,1));
+    if(char.IsLower(tekKarakter)){
+        kucukHarfSayisi++;
+        Console.WriteLine("{0} küçük harf",tekKarakter);
+    }
+    else if(char.IsUpper(tekKarakter)){
+        buyukHarfSayisi++;
+        
+        Console.WriteLine("{0} büyük harf",tekKarakter);
+    }
+    else if(char.IsDigit(tekKarakter)){
+        rakamSayisi++;
+        
+        Console.WriteLine("{0} rakam",tekKarakter);
+    }
+
+}
+
+Console.WriteLine(" Büyük Harf Sayısı : {0} Küçük Harf Sayısı : {1} Rakam Sayısı : {2}",buyukHarfSayisi,kucukHarfSayisi,rakamSayisi);
+*/
+
+// ekrandan aldığınız max sınıra kadar olan asal sayıları ekrana yazdırınız
+// 
+
+// 40
+// 1 den 40'a kadar olan asal sayıları ekrana yazdırcaksın
+
+// 3-5-7-11-13-17-
+// kendisinden küçük sayılara bölünemeyen sayılar asaldır
+
+// Örnek
+/*Console.WriteLine("Bir değer giriniz");
+int deger = int.Parse(Console.ReadLine());
+
+for (int i = 2;i<=deger;i++){
+ int sayac =0;
+
+ for (int j = 2;j<i;j++){
+
+
+    if(i%j==0){
+        // bölen olduğu için sayı asal değil
+        sayac++;
+    }
+ }
+ if(sayac==0)
+ {
+     Console.WriteLine("Asal Sayı : {0}",i);
+ }
+
+}
+*/
+
+// Örnek 
+// Aşağıdaki örnekte ki üçgeni çizdirip, köşe noktalarına X koyunuz
+/*
+
+X
+**
+***
+****
+*****
+X****X
+
+*/
+
+
+
+
+/*for (int i=0;i<=10;i++){
+
+
+    Console.WriteLine();
+    for(int j=0;j<=i-2;j++){
+
+        if(i==0 && j==0){
+
+            Console.Write("X");
+            i++;
+            Console.WriteLine();
+        }
+        if((i==10 &&j==0) || (i==10 && j==8)){
+            
+            Console.Write("X");
+            j++;
+            //Console.WriteLine();
+           
+        }
+        Console.Write("*");
+        
+
+        // yukarıdakilerin dışında kalan her yer 
+
+
+    }
+
+
+
+}
+*/
+
+// Örnek
+// Ekrana eş kenar üçgen çiziniz
+
+/*
+    *
+   ***
+  *****
+ ********
+**********  
+
+*/
+
+Console.WriteLine("Bir değer giriniz");
+int deger =int.Parse(Console.ReadLine());
+
+for (int i = 0;i<deger;i++){
+
+    // satırları 
+}
