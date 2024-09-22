@@ -552,3 +552,11 @@ for (int i = 0;i<deger;i++){
 
 }
 // bu örneği iyice bir inceleyip, bu örnek ile ilgili bazı değişiklikler yaparak derse geliniz.
+
+//  3 adet döngü var,
+// for
+// foreach -diziler konusu ile birlikte kullanacağız.
+// do while 
+
+
+// Kaçış ifadeleri
